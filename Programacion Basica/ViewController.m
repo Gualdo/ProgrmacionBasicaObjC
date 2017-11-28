@@ -53,6 +53,53 @@
     }
     
     NSLog(@"Radar superado");
+    
+    BOOL estaElAireAcondicionadoPuesto = NO;
+    
+    if (estaElAireAcondicionadoPuesto)
+    {
+        NSLog(@"Que fresquito se esta aqui");
+    }
+    else
+    {
+        NSLog(@"Hace calor, pon el aire ahora mismo");
+    }
+    
+    // Sie el coche va a mas de 90, no puede estar puesto.
+    
+    speed = 80;
+    estaElAireAcondicionadoPuesto = NO;
+    
+    if (speed >= 90)
+    {
+        // Hay que ir con cuidado de poner el aire!!!
+        if (estaElAireAcondicionadoPuesto)
+        {
+            NSLog(@"Apaga el aire ahora mismo o reduce la velocidad");
+        }
+        else
+        {
+            NSLog(@"Vamos rápido, pero sin el aire acondicionado");
+        }
+    }
+    else
+    {
+        // No hay ningun problema
+        NSLog(@"Vamos despacito, no hay que preocuparse de nada");
+    }
+    
+    // && -> AND
+    // || -> OR
+    // ! -> NOT
+    
+    if (speed >= 90 && estaElAireAcondicionadoPuesto)
+    {
+        NSLog(@"Salta el chivato de peligro!!!");
+    }
+    else
+    {
+        NSLog(@"Todo sigue con normalidad");
+    }
 }
 
 - (void)didReceiveMemoryWarning
