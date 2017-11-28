@@ -38,7 +38,7 @@
     double zDouble = ((1.0 * x) / (1.0 * y));
     NSLog(@"Mi valor de z como double es: %f", zDouble);*/
     
-    int speed = 95;
+    /*int speed = 95;
     
     //Si pasamos el limite de velocidad, hay que hacer algo
     NSLog(@"Estamos llegando al radar");
@@ -99,7 +99,43 @@
     else
     {
         NSLog(@"Todo sigue con normalidad");
+    }*/
+    
+    NSLog(@"Emepzamos el bucle FOR");
+    
+    for (int i = 1; i < 10; i++)
+    {
+        NSLog(@"Estoy en el paso %d", i);
     }
+    
+    NSLog(@"Emepzamos el bucle WHILE");
+    
+    int i = 0;
+    
+    while (i < 10)
+    {
+        NSLog(@"Estoy en el paso %d del bucle WHILE", i);
+        i++;
+    }
+    
+    NSLog(@"He acabdo el bucle WHILE con un valor de i %d", i);
+    
+    int contador = 10;
+    
+    while (contador >= 0)
+    {
+        NSLog(@"Vamos por el %d", contador);
+        contador--;
+    }
+    
+    NSLog(@"Fin de la cuenta atras del WHILE");
+    
+    for (contador = 10; contador >= 0; contador--)
+    {
+        NSLog(@"Vamos por el %d", contador);
+    }
+    
+    NSLog(@"Fin de la cuenta atras del FOR"); 
 }
 
 - (void)didReceiveMemoryWarning
